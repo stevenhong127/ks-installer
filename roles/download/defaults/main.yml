@@ -50,10 +50,10 @@ ks_version: >-
   {%- endif %}
 
 #KubeSphere:
-ks_apiserver_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/ks-apiserver"
-ks_apiserver_tag: "{{ ks_version }}"
-ks_controller_manager_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/ks-controller-manager"
-ks_controller_manager_tag: "{{ ks_version }}"
+ks_apiserver_repo: "harbor.sige.la/system-public-cr/kubesphere/ks-apiserver"
+ks_apiserver_tag: "dev"
+ks_controller_manager_repo: "harbor.sige.la/system-public-cr/kubesphere/ks-controller-manager"
+ks_controller_manager_tag: "dev"
 ks_update_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/ks-upgrade"
 ks_update_tag: v3.0.0
 ks_alerting_migration_repo: "{{ base_repo }}{{ namespace_override | default('kubesphere') }}/ks-alerting-migration"

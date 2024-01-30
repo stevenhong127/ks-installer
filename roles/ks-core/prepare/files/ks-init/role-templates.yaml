@@ -2131,11 +2131,117 @@ role:
     name: admin
   rules:
     - apiGroups:
-        - '*'
+        - ''
       resources:
-        - '*'
+        - "bindings"
+        - "componentstatuses"
+        - "configmaps"
+        - "endpoints"
+        - "events"
+        - "limitranges"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
+        - "nodes/proxy"
+        - "nodes/status"
+        - "persistentvolumeclaims"
+        - "persistentvolumeclaims/status"
+        - "persistentvolumes"
+        - "persistentvolumes/status"
+        - "pods"
+        - "pods/attach"
+        - "pods/binding"
+        - "pods/ephemeralcontainers"
+        - "pods/eviction"
+        - "pods/exec"
+        - "pods/log"
+        - "pods/portforward"
+        - "pods/proxy"
+        - "pods/status"
+        - "podtemplates"
+        - "replicationcontrollers"
+        - "replicationcontrollers/scale"
+        - "replicationcontrollers/status"
+        - "resourcequotas"
+        - "resourcequotas/status"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+        - "services"
+        - "services/proxy"
+        - "services/status"
       verbs:
-        - '*'
+        - "*"
+    - apiGroups:
+        - ""
+      resources:
+        - "secrets"
+      verbs:
+        - list
+        - watch
+    - apiGroups:
+        - "apiregistration.k8s.io"
+        - "apps"
+        - "events.k8s.io"
+        - "authentication.k8s.io"
+        - "authorization.k8s.io"
+        - "autoscaling"
+        - "batch"
+        - "certificates.k8s.io"
+        - "networking.k8s.io"
+        - "policy"
+        - "rbac.authorization.k8s.io"
+        - "storage.k8s.io"
+        - "admissionregistration.k8s.io"
+        - "apiextensions.k8s.io"
+        - "scheduling.k8s.io"
+        - "coordination.k8s.io"
+        - "node.k8s.io"
+        - "discovery.k8s.io"
+        - "flowcontrol.apiserver.k8s.io"
+        - "acme.cert-manager.io"
+        - "cert-manager.io"
+        - "helm.cattle.io"
+        - "k3s.cattle.io"
+        - "monitoring.coreos.com"
+        - "postgresql.cnpg.io"
+        - "security.istio.io"
+        - "snapshot.storage.k8s.io"
+        - "upgrade.cattle.io"
+        - "application.kubesphere.io"
+        - "auditing.kubesphere.io"
+        - "core.kubefed.io"
+        - "extensions.istio.io"
+        - "gateway.kubesphere.io"
+        - "install.istio.io"
+        - "installer.kubesphere.io"
+        - "monitoring.kubesphere.io"
+        - "network.kubesphere.io"
+        - "scheduling.kubefed.io"
+        - "storage.kubesphere.io"
+        - "telemetry.istio.io"
+        - "tenant.kubesphere.io"
+        - "traefik.containo.us"
+        - "traefik.io"
+        - "iam.kubesphere.io"
+        - "logging.kubesphere.io"
+        - "quota.kubesphere.io"
+        - "servicemesh.kubesphere.io"
+        - "networking.istio.io"
+        - "app.k8s.io"
+        - "operator.victoriametrics.com"
+        - "types.kubefed.io"
+        - "notification.kubesphere.io"
+        - "metrics.k8s.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
+        - "alerting.kubesphere.io"
+        - "cluster.kubesphere.io"
+      resources:
+        - "*"
+      verbs:
+        - "*"
 
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
@@ -2152,104 +2258,123 @@ role:
     name: viewer
   rules:
     - apiGroups:
-        - '*'
+        - ''
       resources:
-        - '*'
+        - "bindings"
+        - "componentstatuses"
+        - "configmaps"
+        - "endpoints"
+        - "events"
+        - "limitranges"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
+        - "nodes/proxy"
+        - "nodes/status"
+        - "persistentvolumeclaims"
+        - "persistentvolumeclaims/status"
+        - "persistentvolumes"
+        - "persistentvolumes/status"
+        - "pods"
+        - "pods/attach"
+        - "pods/binding"
+        - "pods/ephemeralcontainers"
+        - "pods/eviction"
+        - "pods/exec"
+        - "pods/log"
+        - "pods/portforward"
+        - "pods/proxy"
+        - "pods/status"
+        - "podtemplates"
+        - "replicationcontrollers"
+        - "replicationcontrollers/scale"
+        - "replicationcontrollers/status"
+        - "resourcequotas"
+        - "resourcequotas/status"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+        - "services"
+        - "services/proxy"
+        - "services/status"
+      verbs:
+        - get
+        - list
+        - watch
+    - apiGroups:
+        - ""
+      resources:
+        - "secrets"
+      verbs:
+        - list
+        - watch
+    - apiGroups:
+        - "apiregistration.k8s.io"
+        - "apps"
+        - "events.k8s.io"
+        - "authentication.k8s.io"
+        - "authorization.k8s.io"
+        - "autoscaling"
+        - "batch"
+        - "certificates.k8s.io"
+        - "networking.k8s.io"
+        - "policy"
+        - "rbac.authorization.k8s.io"
+        - "storage.k8s.io"
+        - "admissionregistration.k8s.io"
+        - "apiextensions.k8s.io"
+        - "scheduling.k8s.io"
+        - "coordination.k8s.io"
+        - "node.k8s.io"
+        - "discovery.k8s.io"
+        - "flowcontrol.apiserver.k8s.io"
+        - "acme.cert-manager.io"
+        - "cert-manager.io"
+        - "helm.cattle.io"
+        - "k3s.cattle.io"
+        - "monitoring.coreos.com"
+        - "postgresql.cnpg.io"
+        - "security.istio.io"
+        - "snapshot.storage.k8s.io"
+        - "upgrade.cattle.io"
+        - "application.kubesphere.io"
+        - "auditing.kubesphere.io"
+        - "core.kubefed.io"
+        - "extensions.istio.io"
+        - "gateway.kubesphere.io"
+        - "install.istio.io"
+        - "installer.kubesphere.io"
+        - "monitoring.kubesphere.io"
+        - "network.kubesphere.io"
+        - "scheduling.kubefed.io"
+        - "storage.kubesphere.io"
+        - "telemetry.istio.io"
+        - "tenant.kubesphere.io"
+        - "traefik.containo.us"
+        - "traefik.io"
+        - "iam.kubesphere.io"
+        - "logging.kubesphere.io"
+        - "quota.kubesphere.io"
+        - "servicemesh.kubesphere.io"
+        - "networking.istio.io"
+        - "app.k8s.io"
+        - "operator.victoriametrics.com"
+        - "types.kubefed.io"
+        - "notification.kubesphere.io"
+        - "metrics.k8s.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
+        - "alerting.kubesphere.io"
+        - "cluster.kubesphere.io"
+      resources:
+        - "*"
       verbs:
         - get
         - list
         - watch
 
----
-apiVersion: iam.kubesphere.io/v1alpha2
-kind: RoleBase
-metadata:
-  name: workspace-regular
-role:
-  apiVersion: iam.kubesphere.io/v1alpha2
-  kind: WorkspaceRole
-  metadata:
-    annotations:
-      iam.kubesphere.io/aggregation-roles: '["role-template-view-workspace-settings"]'
-      kubesphere.io/creator: system
-    name: regular
-  rules:
-    - apiGroups:
-        - '*'
-      resources:
-        - workspaces
-        - workspacemembers
-      verbs:
-        - get
-        - list
-        - watch
-    - apiGroups:
-        - monitoring.kubesphere.io
-        - metering.kubesphere.io
-        - monitoring.coreos.com
-      resources:
-        - namespaces
-      verbs:
-        - list
 
----
-apiVersion: iam.kubesphere.io/v1alpha2
-kind: RoleBase
-metadata:
-  name: workspace-self-provisioner
-role:
-  apiVersion: iam.kubesphere.io/v1alpha2
-  kind: WorkspaceRole
-  metadata:
-    annotations:
-      iam.kubesphere.io/aggregation-roles: '["role-template-create-projects","role-template-create-devops","role-template-view-app-templates","role-template-manage-app-templates","role-template-view-workspace-settings"]'
-      kubesphere.io/creator: system
-    name: self-provisioner
-  rules:
-    - apiGroups:
-        - '*'
-      resources:
-        - workspaces
-        - workspacemembers
-        - quotas
-        - abnormalworkloads
-        - pods
-      verbs:
-        - get
-        - list
-        - watch
-    - apiGroups:
-        - '*'
-      resources:
-        - namespaces
-        - federatednamespaces
-        - devops
-        - devopsprojects
-      verbs:
-        - create
-        - watch
-    - apiGroups:
-        - '*'
-      resources:
-        - devops
-      verbs:
-        - get
-    - apiGroups:
-        - monitoring.kubesphere.io
-        - metering.kubesphere.io
-        - monitoring.coreos.com
-      resources:
-        - namespaces
-        - workloads
-      verbs:
-        - get
-        - list
-    - apiGroups:
-        - 'openpitrix.io'
-      resources:
-        - '*'
-      verbs:
-        - '*'
 
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
@@ -2285,80 +2410,118 @@ role:
     name: admin
   rules:
     - apiGroups:
-        - '*'
+        - ''
       resources:
-        - '*'
+        - "bindings"
+        - "componentstatuses"
+        - "configmaps"
+        - "endpoints"
+        - "events"
+        - "limitranges"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
+        - "nodes/proxy"
+        - "nodes/status"
+        - "persistentvolumeclaims"
+        - "persistentvolumeclaims/status"
+        - "persistentvolumes"
+        - "persistentvolumes/status"
+        - "pods"
+        - "pods/attach"
+        - "pods/binding"
+        - "pods/ephemeralcontainers"
+        - "pods/eviction"
+        - "pods/exec"
+        - "pods/log"
+        - "pods/portforward"
+        - "pods/proxy"
+        - "pods/status"
+        - "podtemplates"
+        - "replicationcontrollers"
+        - "replicationcontrollers/scale"
+        - "replicationcontrollers/status"
+        - "resourcequotas"
+        - "resourcequotas/status"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+        - "services"
+        - "services/proxy"
+        - "services/status"
       verbs:
-        - '*'
-
----
-apiVersion: iam.kubesphere.io/v1alpha2
-kind: RoleBase
-metadata:
-  name: project-operator
-  labels:
-    scope.kubesphere.io/namespace: ""
-    scope.kubesphere.io/devops: ""
-role:
-  apiVersion: rbac.authorization.k8s.io/v1
-  kind: Role
-  metadata:
-    annotations:
-      iam.kubesphere.io/aggregation-roles: '["role-template-view-members","role-template-view-roles",
-        "role-template-view-app-workloads","role-template-manage-app-workloads",
-        "role-template-view-volumes","role-template-manage-volumes",
-        "role-template-view-snapshots","role-template-manage-snapshots",
-        "role-template-view-secrets","role-template-manage-secrets",
-        "role-template-view-serviceaccount","role-template-manage-serviceaccount",
-        "role-template-view-configmaps","role-template-manage-configmaps",
-        "role-template-view-alerting-policies","role-template-manage-alerting-policies",
-        "role-template-view-alerting-messages",
-        "role-template-view-custom-monitoring","role-template-manage-custom-monitoring",
-        "role-template-view-pipelines","role-template-manage-pipelines",
-        "role-template-view-pipelineruns","role-template-manage-pipelineruns",
-        "role-template-view-credentials","role-template-manage-credentials",
-        "role-template-view-gitrepositories","role-template-manage-gitrepositories",
-        "role-template-view-gitops-applications","role-template-manage-gitops-applications"]'
-      kubesphere.io/creator: system
-    name: operator
-  rules:
+        - "*"
     - apiGroups:
-        - '*'
+        - ""
       resources:
-        - '*'
+        - "secrets"
       verbs:
-        - get
         - list
         - watch
     - apiGroups:
-        - ""
-        - apps
-        - extensions
-        - batch
-        - logging.kubesphere.io
-        - monitoring.kubesphere.io
-        - monitoring.coreos.com
-        - metering.kubesphere.io
-        - notification.kubesphere.io
-        - autoscaling
-        - alerting.kubesphere.io
-        - openpitrix.io
-        - app.k8s.io
-        - servicemesh.kubesphere.io
-        - operations.kubesphere.io
-        - devops.kubesphere.io
-        - gitops.kubesphere.io
-        - resources.kubesphere.io
-        - config.istio.io
-        - events.k8s.io
-        - events.kubesphere.io
-        - snapshot.storage.k8s.io
-        - monitoring.coreos.com
-        - networking.k8s.io
+        - "apiregistration.k8s.io"
+        - "apps"
+        - "events.k8s.io"
+        - "authentication.k8s.io"
+        - "authorization.k8s.io"
+        - "autoscaling"
+        - "batch"
+        - "certificates.k8s.io"
+        - "networking.k8s.io"
+        - "policy"
+        - "rbac.authorization.k8s.io"
+        - "storage.k8s.io"
+        - "admissionregistration.k8s.io"
+        - "apiextensions.k8s.io"
+        - "scheduling.k8s.io"
+        - "coordination.k8s.io"
+        - "node.k8s.io"
+        - "discovery.k8s.io"
+        - "flowcontrol.apiserver.k8s.io"
+        - "acme.cert-manager.io"
+        - "cert-manager.io"
+        - "helm.cattle.io"
+        - "k3s.cattle.io"
+        - "monitoring.coreos.com"
+        - "postgresql.cnpg.io"
+        - "security.istio.io"
+        - "snapshot.storage.k8s.io"
+        - "upgrade.cattle.io"
+        - "application.kubesphere.io"
+        - "auditing.kubesphere.io"
+        - "core.kubefed.io"
+        - "extensions.istio.io"
+        - "gateway.kubesphere.io"
+        - "install.istio.io"
+        - "installer.kubesphere.io"
+        - "monitoring.kubesphere.io"
+        - "network.kubesphere.io"
+        - "scheduling.kubefed.io"
+        - "storage.kubesphere.io"
+        - "telemetry.istio.io"
+        - "tenant.kubesphere.io"
+        - "traefik.containo.us"
+        - "traefik.io"
+        - "iam.kubesphere.io"
+        - "logging.kubesphere.io"
+        - "quota.kubesphere.io"
+        - "servicemesh.kubesphere.io"
+        - "networking.istio.io"
+        - "app.k8s.io"
+        - "operator.victoriametrics.com"
+        - "types.kubefed.io"
+        - "notification.kubesphere.io"
+        - "metrics.k8s.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
+        - "alerting.kubesphere.io"
+        - "cluster.kubesphere.io"
       resources:
-        - '*'
+        - "*"
       verbs:
-        - '*'
+        - "*"
+
 
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
@@ -2384,9 +2547,117 @@ role:
     name: viewer
   rules:
     - apiGroups:
-        - '*'
+        - ''
       resources:
-        - '*'
+        - "bindings"
+        - "componentstatuses"
+        - "configmaps"
+        - "endpoints"
+        - "events"
+        - "limitranges"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
+        - "nodes/proxy"
+        - "nodes/status"
+        - "persistentvolumeclaims"
+        - "persistentvolumeclaims/status"
+        - "persistentvolumes"
+        - "persistentvolumes/status"
+        - "pods"
+        - "pods/attach"
+        - "pods/binding"
+        - "pods/ephemeralcontainers"
+        - "pods/eviction"
+        - "pods/exec"
+        - "pods/log"
+        - "pods/portforward"
+        - "pods/proxy"
+        - "pods/status"
+        - "podtemplates"
+        - "replicationcontrollers"
+        - "replicationcontrollers/scale"
+        - "replicationcontrollers/status"
+        - "resourcequotas"
+        - "resourcequotas/status"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+        - "services"
+        - "services/proxy"
+        - "services/status"
+      verbs:
+        - get
+        - list
+        - watch
+    - apiGroups:
+        - ""
+      resources:
+        - "secrets"
+      verbs:
+        - list
+        - watch
+    - apiGroups:
+        - "apiregistration.k8s.io"
+        - "apps"
+        - "events.k8s.io"
+        - "authentication.k8s.io"
+        - "authorization.k8s.io"
+        - "autoscaling"
+        - "batch"
+        - "certificates.k8s.io"
+        - "networking.k8s.io"
+        - "policy"
+        - "rbac.authorization.k8s.io"
+        - "storage.k8s.io"
+        - "admissionregistration.k8s.io"
+        - "apiextensions.k8s.io"
+        - "scheduling.k8s.io"
+        - "coordination.k8s.io"
+        - "node.k8s.io"
+        - "discovery.k8s.io"
+        - "flowcontrol.apiserver.k8s.io"
+        - "acme.cert-manager.io"
+        - "cert-manager.io"
+        - "helm.cattle.io"
+        - "k3s.cattle.io"
+        - "monitoring.coreos.com"
+        - "postgresql.cnpg.io"
+        - "security.istio.io"
+        - "snapshot.storage.k8s.io"
+        - "upgrade.cattle.io"
+        - "application.kubesphere.io"
+        - "auditing.kubesphere.io"
+        - "core.kubefed.io"
+        - "extensions.istio.io"
+        - "gateway.kubesphere.io"
+        - "install.istio.io"
+        - "installer.kubesphere.io"
+        - "monitoring.kubesphere.io"
+        - "network.kubesphere.io"
+        - "scheduling.kubefed.io"
+        - "storage.kubesphere.io"
+        - "telemetry.istio.io"
+        - "tenant.kubesphere.io"
+        - "traefik.containo.us"
+        - "traefik.io"
+        - "iam.kubesphere.io"
+        - "logging.kubesphere.io"
+        - "quota.kubesphere.io"
+        - "servicemesh.kubesphere.io"
+        - "networking.istio.io"
+        - "app.k8s.io"
+        - "operator.victoriametrics.com"
+        - "types.kubefed.io"
+        - "notification.kubesphere.io"
+        - "metrics.k8s.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
+        - "alerting.kubesphere.io"
+        - "cluster.kubesphere.io"
+      resources:
+        - "*"
       verbs:
         - get
         - list
@@ -2945,7 +3216,6 @@ role:
       resources:
         - 'secrets'
       verbs:
-        - get
         - list
         - watch
 
@@ -2975,7 +3245,8 @@ role:
       resources:
         - 'secrets'
       verbs:
-        - '*'
+        - 'list'
+        - 'watch'
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
 kind: RoleBase
