@@ -82,7 +82,7 @@ rules:
   - nonResourceURLs:
       - '*'
     verbs:
-      - 'GET'
+      - 'get'
 
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
@@ -3220,6 +3220,7 @@ role:
         - watch
 
 
+
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
 kind: RoleBase
@@ -3247,6 +3248,9 @@ role:
       verbs:
         - 'list'
         - 'watch'
+
+
+
 ---
 apiVersion: iam.kubesphere.io/v1alpha2
 kind: RoleBase
