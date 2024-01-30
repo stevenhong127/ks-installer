@@ -2180,6 +2180,12 @@ role:
         - list
         - watch
     - apiGroups:
+        - "terminal.kubesphere.io"
+        - "devops.kubesphere.io"
+        - "gitops.kubesphere.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
         - "apiregistration.k8s.io"
         - "apps"
         - "events.k8s.io"
@@ -2210,6 +2216,7 @@ role:
         - "upgrade.cattle.io"
         - "application.kubesphere.io"
         - "auditing.kubesphere.io"
+        - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
         - "gateway.kubesphere.io"
@@ -2231,13 +2238,9 @@ role:
         - "app.k8s.io"
         - "operator.victoriametrics.com"
         - "types.kubefed.io"
+        - "alerting.kubesphere.io"
         - "notification.kubesphere.io"
         - "metrics.k8s.io"
-        - "resources.kubesphere.io"
-        - "operations.kubesphere.io"
-        - "openpitrix.io"
-        - "alerting.kubesphere.io"
-        - "cluster.kubesphere.io"
       resources:
         - "*"
       verbs:
@@ -2309,6 +2312,12 @@ role:
         - list
         - watch
     - apiGroups:
+        - "terminal.kubesphere.io"
+        - "devops.kubesphere.io"
+        - "gitops.kubesphere.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
         - "apiregistration.k8s.io"
         - "apps"
         - "events.k8s.io"
@@ -2339,6 +2348,7 @@ role:
         - "upgrade.cattle.io"
         - "application.kubesphere.io"
         - "auditing.kubesphere.io"
+        - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
         - "gateway.kubesphere.io"
@@ -2360,13 +2370,9 @@ role:
         - "app.k8s.io"
         - "operator.victoriametrics.com"
         - "types.kubefed.io"
+        - "alerting.kubesphere.io"
         - "notification.kubesphere.io"
         - "metrics.k8s.io"
-        - "resources.kubesphere.io"
-        - "operations.kubesphere.io"
-        - "openpitrix.io"
-        - "alerting.kubesphere.io"
-        - "cluster.kubesphere.io"
       resources:
         - "*"
       verbs:
@@ -2459,6 +2465,12 @@ role:
         - list
         - watch
     - apiGroups:
+        - "terminal.kubesphere.io"
+        - "devops.kubesphere.io"
+        - "gitops.kubesphere.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
         - "apiregistration.k8s.io"
         - "apps"
         - "events.k8s.io"
@@ -2489,6 +2501,7 @@ role:
         - "upgrade.cattle.io"
         - "application.kubesphere.io"
         - "auditing.kubesphere.io"
+        - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
         - "gateway.kubesphere.io"
@@ -2510,13 +2523,9 @@ role:
         - "app.k8s.io"
         - "operator.victoriametrics.com"
         - "types.kubefed.io"
+        - "alerting.kubesphere.io"
         - "notification.kubesphere.io"
         - "metrics.k8s.io"
-        - "resources.kubesphere.io"
-        - "operations.kubesphere.io"
-        - "openpitrix.io"
-        - "alerting.kubesphere.io"
-        - "cluster.kubesphere.io"
       resources:
         - "*"
       verbs:
@@ -2598,6 +2607,12 @@ role:
         - list
         - watch
     - apiGroups:
+        - "terminal.kubesphere.io"
+        - "devops.kubesphere.io"
+        - "gitops.kubesphere.io"
+        - "resources.kubesphere.io"
+        - "operations.kubesphere.io"
+        - "openpitrix.io"
         - "apiregistration.k8s.io"
         - "apps"
         - "events.k8s.io"
@@ -2628,6 +2643,7 @@ role:
         - "upgrade.cattle.io"
         - "application.kubesphere.io"
         - "auditing.kubesphere.io"
+        - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
         - "gateway.kubesphere.io"
@@ -2649,13 +2665,9 @@ role:
         - "app.k8s.io"
         - "operator.victoriametrics.com"
         - "types.kubefed.io"
+        - "alerting.kubesphere.io"
         - "notification.kubesphere.io"
         - "metrics.k8s.io"
-        - "resources.kubesphere.io"
-        - "operations.kubesphere.io"
-        - "openpitrix.io"
-        - "alerting.kubesphere.io"
-        - "cluster.kubesphere.io"
       resources:
         - "*"
       verbs:
