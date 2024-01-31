@@ -2162,8 +2162,6 @@ role:
         - "replicationcontrollers"
         - "replicationcontrollers/scale"
         - "replicationcontrollers/status"
-        - "resourcequotas"
-        - "resourcequotas/status"
         - "services"
         - "services/proxy"
         - "services/status"
@@ -2182,6 +2180,8 @@ role:
         - "configmaps"
         - "serviceaccounts"
         - "serviceaccounts/token"
+        - "resourcequotas"
+        - "resourcequotas/status"
       verbs:
         - list
         - watch
@@ -2453,8 +2453,6 @@ role:
         - "replicationcontrollers"
         - "replicationcontrollers/scale"
         - "replicationcontrollers/status"
-        - "resourcequotas"
-        - "resourcequotas/status"
         - "services"
         - "services/proxy"
         - "services/status"
@@ -2473,6 +2471,8 @@ role:
         - "configmaps"
         - "serviceaccounts"
         - "serviceaccounts/token"
+        - "resourcequotas"
+        - "resourcequotas/status"
       verbs:
         - list
         - watch
