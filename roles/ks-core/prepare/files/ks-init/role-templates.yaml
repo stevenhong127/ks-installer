@@ -2135,7 +2135,6 @@ role:
       resources:
         - "bindings"
         - "componentstatuses"
-        - "configmaps"
         - "endpoints"
         - "events"
         - "limitranges"
@@ -2165,8 +2164,6 @@ role:
         - "replicationcontrollers/status"
         - "resourcequotas"
         - "resourcequotas/status"
-        - "serviceaccounts"
-        - "serviceaccounts/token"
         - "services"
         - "services/proxy"
         - "services/status"
@@ -2180,7 +2177,16 @@ role:
         - list
         - watch
     - apiGroups:
-        - "terminal.kubesphere.io"
+        - ""
+      resources:
+        - "configmaps"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+      verbs:
+        - list
+        - watch
+        - get
+    - apiGroups:
         - "devops.kubesphere.io"
         - "gitops.kubesphere.io"
         - "resources.kubesphere.io"
@@ -2420,7 +2426,6 @@ role:
       resources:
         - "bindings"
         - "componentstatuses"
-        - "configmaps"
         - "endpoints"
         - "events"
         - "limitranges"
@@ -2450,8 +2455,6 @@ role:
         - "replicationcontrollers/status"
         - "resourcequotas"
         - "resourcequotas/status"
-        - "serviceaccounts"
-        - "serviceaccounts/token"
         - "services"
         - "services/proxy"
         - "services/status"
@@ -2465,7 +2468,16 @@ role:
         - list
         - watch
     - apiGroups:
-        - "terminal.kubesphere.io"
+        - ""
+      resources:
+        - "configmaps"
+        - "serviceaccounts"
+        - "serviceaccounts/token"
+      verbs:
+        - list
+        - watch
+        - get
+    - apiGroups:
         - "devops.kubesphere.io"
         - "gitops.kubesphere.io"
         - "resources.kubesphere.io"
