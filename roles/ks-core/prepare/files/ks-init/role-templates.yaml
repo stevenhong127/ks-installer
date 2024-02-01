@@ -2181,6 +2181,7 @@ role:
         - get
     - apiGroups:
         - "gateway.kubesphere.io"
+        - "iam.kubesphere.io"
       resources:
         - "*"
       verbs:
@@ -2471,6 +2472,7 @@ role:
         - get
     - apiGroups:
         - "gateway.kubesphere.io"
+        - "iam.kubesphere.io"
       resources:
         - "*"
       verbs:
