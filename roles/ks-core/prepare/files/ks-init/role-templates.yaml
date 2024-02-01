@@ -2138,10 +2138,6 @@ role:
         - "endpoints"
         - "events"
         - "limitranges"
-        - "namespaces"
-        - "namespaces/finalize"
-        - "namespaces/status"
-        - "nodes"
         - "nodes/proxy"
         - "nodes/status"
         - "persistentvolumeclaims"
@@ -2182,6 +2178,10 @@ role:
         - "serviceaccounts/token"
         - "resourcequotas"
         - "resourcequotas/status"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
       verbs:
         - list
         - watch
@@ -2429,10 +2429,6 @@ role:
         - "endpoints"
         - "events"
         - "limitranges"
-        - "namespaces"
-        - "namespaces/finalize"
-        - "namespaces/status"
-        - "nodes"
         - "nodes/proxy"
         - "nodes/status"
         - "persistentvolumeclaims"
@@ -2473,6 +2469,10 @@ role:
         - "serviceaccounts/token"
         - "resourcequotas"
         - "resourcequotas/status"
+        - "namespaces"
+        - "namespaces/finalize"
+        - "namespaces/status"
+        - "nodes"
       verbs:
         - list
         - watch
