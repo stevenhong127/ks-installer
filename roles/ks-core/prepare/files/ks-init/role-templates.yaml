@@ -2137,21 +2137,13 @@ role:
         - "componentstatuses"
         - "endpoints"
         - "events"
-        - "limitranges"
-        - "nodes/proxy"
-        - "nodes/status"
         - "persistentvolumeclaims"
         - "persistentvolumeclaims/status"
         - "persistentvolumes"
         - "persistentvolumes/status"
         - "pods"
-        - "pods/attach"
         - "pods/binding"
-        - "pods/ephemeralcontainers"
-        - "pods/eviction"
-        - "pods/exec"
         - "pods/log"
-        - "pods/portforward"
         - "pods/proxy"
         - "pods/status"
         - "podtemplates"
@@ -2182,6 +2174,15 @@ role:
         - "namespaces/finalize"
         - "namespaces/status"
         - "nodes"
+        - "limitranges"
+      verbs:
+        - list
+        - watch
+        - get
+    - apiGroups:
+        - "gateway.kubesphere.io"
+      resources:
+        - "*"
       verbs:
         - list
         - watch
@@ -2225,7 +2226,6 @@ role:
         - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
-        - "gateway.kubesphere.io"
         - "install.istio.io"
         - "installer.kubesphere.io"
         - "monitoring.kubesphere.io"
@@ -2236,7 +2236,6 @@ role:
 #        - "tenant.kubesphere.io"
         - "traefik.containo.us"
         - "traefik.io"
-        - "iam.kubesphere.io"
         - "logging.kubesphere.io"
         - "quota.kubesphere.io"
         - "servicemesh.kubesphere.io"
@@ -2428,21 +2427,13 @@ role:
         - "componentstatuses"
         - "endpoints"
         - "events"
-        - "limitranges"
-        - "nodes/proxy"
-        - "nodes/status"
         - "persistentvolumeclaims"
         - "persistentvolumeclaims/status"
         - "persistentvolumes"
         - "persistentvolumes/status"
         - "pods"
-        - "pods/attach"
         - "pods/binding"
-        - "pods/ephemeralcontainers"
-        - "pods/eviction"
-        - "pods/exec"
         - "pods/log"
-        - "pods/portforward"
         - "pods/proxy"
         - "pods/status"
         - "podtemplates"
@@ -2473,6 +2464,15 @@ role:
         - "namespaces/finalize"
         - "namespaces/status"
         - "nodes"
+        - "limitranges"
+      verbs:
+        - list
+        - watch
+        - get
+    - apiGroups:
+        - "gateway.kubesphere.io"
+      resources:
+        - "*"
       verbs:
         - list
         - watch
@@ -2516,7 +2516,6 @@ role:
         - "cluster.kubesphere.io"
         - "core.kubefed.io"
         - "extensions.istio.io"
-        - "gateway.kubesphere.io"
         - "install.istio.io"
         - "installer.kubesphere.io"
         - "monitoring.kubesphere.io"
@@ -2524,10 +2523,9 @@ role:
         - "scheduling.kubefed.io"
         - "storage.kubesphere.io"
         - "telemetry.istio.io"
-#        - "tenant.kubesphere.io"
+        #        - "tenant.kubesphere.io"
         - "traefik.containo.us"
         - "traefik.io"
-        - "iam.kubesphere.io"
         - "logging.kubesphere.io"
         - "quota.kubesphere.io"
         - "servicemesh.kubesphere.io"
