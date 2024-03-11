@@ -35,6 +35,7 @@ spec:
         - controller-manager
         - --logtostderr=true
         - --leader-elect=true
+        - --controllers="*,-virtualservice,-destinationrule,-storagecapability,-pvcautoresizer,-pvcworkloadrestarter,-nsnp,-ippool"
         image: {{ .Values.image.ks_controller_manager_repo }}:{{ .Values.image.ks_controller_manager_tag | default .Chart.AppVersion }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: ks-controller-manager
