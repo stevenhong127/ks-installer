@@ -4,11 +4,14 @@ replicaCount: {{ master_num }}
 replicaCount: 1
 {% endif %}
 
+imagePullSecrets:
+  - name: {{ common.core.imagePullSecrets }}
+
 image:
-  ks_controller_manager_repo: {{ ks_controller_manager_repo }}
-  ks_controller_manager_tag: {{ ks_controller_manager_tag }}
-  ks_apiserver_repo: {{ ks_apiserver_repo }}
-  ks_apiserver_tag: {{ ks_apiserver_tag }}
+  ks_controller_manager_repo: {{ common.core.image.ks_controller_manager_repo }}
+  ks_controller_manager_tag: GIT_TAG
+  ks_apiserver_repo: {{ common.core.image.ks_apiserver_repo }}
+  ks_apiserver_tag: GIT_TAG
   ks_console_repo: {{ ks_console_repo }}
   ks_console_tag: {{ ks_console_tag }}
   ks_kubectl_repo: {{ ks_kubectl_repo }}
