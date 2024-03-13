@@ -504,12 +504,12 @@ def generate_new_cluster_configuration(api):
                      "enabled": False
                 }
         else:
-            cluster_configuration_spec["common"]["es"]["enabled"] = False
+            cluster_configuration_spec["common"]["es"]["enabled"] = True
             if "opensearch" in cluster_configuration_spec["common"]:
-                cluster_configuration_spec["common"]["opensearch"]["enabled"] = True
+                cluster_configuration_spec["common"]["opensearch"]["enabled"] = False
             else:
                 cluster_configuration_spec["common"]["opensearch"] = {
-                     "enabled": True
+                     "enabled": False
                 }
 
         # Migrate the configuration of es elasticsearch
